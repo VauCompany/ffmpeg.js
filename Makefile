@@ -310,7 +310,7 @@ EMCC_COMMON_ARGS = \
 	-s OUTLINING_LIMIT=20000 \
 	-O3 --memory-init-file 0 \
 	--pre-js $(PRE_JS) \
-	-o $@
+	-o dist/$@
 
 ffmpeg-webm.js: $(FFMPEG_WEBM_BC) $(PRE_JS) $(POST_JS_SYNC)
 	emcc $(FFMPEG_WEBM_BC) $(WEBM_SHARED_DEPS) \
