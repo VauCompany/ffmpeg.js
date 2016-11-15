@@ -294,6 +294,7 @@ build/ffmpeg-mp4/ffmpeg.bc: $(MP4_SHARED_DEPS)
 		--enable-gpl \
 		--enable-libmp3lame \
 		--enable-libx264 \
+		--enable-bsf=h264_mp4toannexb \
 		--extra-cflags="-I../lame/dist/include" \
 		--extra-ldflags="-L../lame/dist/lib" \
 		&& \
